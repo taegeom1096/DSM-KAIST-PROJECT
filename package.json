@@ -1,0 +1,17 @@
+{
+  "name": "menu-recommendation-app",
+  "version": "1.0.0",
+  "description": "A full-stack menu recommendation website built with Node.js and vanilla frontend assets.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": [
+    "menu",
+    "recommendation",
+    "node"
+  ],
+  "author": "Jo Hyeonwoo, Kim Taegeon",
+  "license": "MIT"
+}

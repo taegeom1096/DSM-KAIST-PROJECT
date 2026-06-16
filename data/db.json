@@ -1,0 +1,133 @@
+{
+  "menus": [
+    {
+      "id": 1,
+      "name": "김치찌개",
+      "category": "한식",
+      "calorie": 650,
+      "spicy_level": 3,
+      "author_name": "기본",
+      "created_at": "2026-06-16T00:00:00.000Z"
+    },
+    {
+      "id": 2,
+      "name": "짜장면",
+      "category": "중식",
+      "calorie": 820,
+      "spicy_level": 0,
+      "author_name": "기본",
+      "created_at": "2026-06-16T00:00:00.000Z"
+    },
+    {
+      "id": 3,
+      "name": "치킨",
+      "category": "패스트푸드",
+      "calorie": 1200,
+      "spicy_level": 2,
+      "author_name": "기본",
+      "created_at": "2026-06-16T00:00:00.000Z"
+    },
+    {
+      "id": 4,
+      "name": "쌀국수",
+      "category": "아시안",
+      "calorie": 540,
+      "spicy_level": 1,
+      "author_name": "기본",
+      "created_at": "2026-06-16T00:00:00.000Z"
+    },
+    {
+      "id": 5,
+      "name": "제육볶음",
+      "category": "한식",
+      "calorie": 760,
+      "spicy_level": 4,
+      "author_name": "기본",
+      "created_at": "2026-06-16T00:00:00.000Z"
+    },
+    {
+      "id": 6,
+      "name": "돈까스",
+      "category": "일식",
+      "calorie": 900,
+      "spicy_level": 0,
+      "author_name": "기본",
+      "created_at": "2026-06-16T00:00:00.000Z"
+    },
+    {
+      "id": 7,
+      "name": "떡볶이",
+      "category": "분식",
+      "calorie": 680,
+      "spicy_level": 5,
+      "author_name": "기본",
+      "created_at": "2026-06-16T00:00:00.000Z"
+    },
+    {
+      "id": 8,
+      "name": "샐러드 볼",
+      "category": "가벼운식사",
+      "calorie": 430,
+      "spicy_level": 0,
+      "author_name": "기본",
+      "created_at": "2026-06-16T00:00:00.000Z"
+    }
+  ],
+  "recommendations": [
+    {
+      "id": 4,
+      "user_name": "배고픈 사람",
+      "result_method": "hungry-button",
+      "menu_id": 4,
+      "created_at": "2026-06-16T11:01:58.178Z",
+      "updated_at": "2026-06-16T11:01:58.179Z"
+    },
+    {
+      "id": 5,
+      "user_name": "현우",
+      "result_method": "hungry-button",
+      "menu_id": 1,
+      "created_at": "2026-06-16T11:02:28.119Z",
+      "updated_at": "2026-06-16T11:02:28.119Z"
+    },
+    {
+      "id": 6,
+      "user_name": "현우",
+      "result_method": "hungry-button",
+      "menu_id": 5,
+      "created_at": "2026-06-16T11:03:23.840Z",
+      "updated_at": "2026-06-16T11:03:23.840Z"
+    },
+    {
+      "id": 7,
+      "user_name": "A",
+      "result_method": "hungry-button",
+      "menu_id": 1,
+      "created_at": "2026-06-16T11:04:18.859Z",
+      "updated_at": "2026-06-16T11:04:18.859Z"
+    }
+  ],
+  "reviews": [
+    {
+      "id": 1,
+      "menu_id": 2,
+      "reviewer_name": "태건",
+      "comment": "오늘 점심으로 인정",
+      "rating": 5,
+      "created_at": "2026-06-16T11:00:01.752Z"
+    },
+    {
+      "id": 2,
+      "menu_id": 1,
+      "reviewer_name": "현우",
+      "comment": "너무 맛없다",
+      "rating": 1,
+      "created_at": "2026-06-16T11:03:07.594Z"
+    }
+  ],
+  "counters": {
+    "menus": 9,
+    "recommendations": 8,
+    "reviews": 3
+  }
+}

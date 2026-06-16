@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>메뉴 추천</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="recommend-panel" aria-labelledby="app-title">
+        <div class="brand-row">
+          <div>
+            <p class="eyebrow">오늘 뭐 먹지?</p>
+            <h1 id="app-title">메뉴 추천</h1>
+          </div>
+          <div class="service-badge">랜덤 추천</div>
+        </div>
+
+        <div class="plate-visual" aria-hidden="true">
+          <div class="plate">
+            <span class="food food-rice"></span>
+            <span class="food food-main"></span>
+            <span class="food food-side"></span>
+            <span class="chopstick chopstick-one"></span>
+            <span class="chopstick chopstick-two"></span>
+          </div>
+        </div>
+
+        <form id="recommend-form" class="recommend-form">
+          <label for="user-name">사용자 이름</label>
+          <div class="input-row">
+            <input id="user-name" name="user_name" type="text" placeholder="예: 현우" autocomplete="name" />
+            <button class="primary-button" type="submit">음식 뽑기</button>
+          </div>
+        </form>
+
+        <div id="result-card" class="result-card is-empty" aria-live="polite">
+          <p class="result-label">추천 결과</p>
+          <h2>아직 메뉴를 뽑지 않았어요</h2>
+          <p>이름을 입력하고 버튼을 누르면 서버가 메뉴 하나를 골라줍니다.</p>
+        </div>
+
+        <div id="status-message" class="status-message" role="status"></div>
+      </section>
+
+      <section class="workspace">
+        <div class="tabs" role="tablist" aria-label="메뉴 추천 기능">
+          <button class="tab-button is-active" type="button" data-tab="history">추천 기록</button>
+          <button class="tab-button" type="button" data-tab="menus">메뉴 관리</button>
+          <button class="tab-button" type="button" data-tab="detail">상세/한 줄 평</button>
+        </div>
+
+        <section id="history-tab" class="tab-panel is-active" aria-labelledby="history-tab-button">
+          <div class="panel-header">
+            <div>
+              <h2>최근 추천 기록</h2>
+              <p>다시 뽑기와 삭제까지 바로 관리할 수 있습니다.</p>
+            </div>
+            <button id="refresh-history" class="icon-button" type="button" aria-label="추천 기록 새로고침" title="새로고침">↻</button>
+          </div>
+          <div id="history-list" class="list-grid"></div>
+        </section>
+
+        <section id="menus-tab" class="tab-panel" aria-labelledby="menus-tab-button">
+          <div class="panel-header">
+            <div>
+              <h2>추천 후보 메뉴</h2>
+              <p>메뉴를 추가하면 랜덤 추첨 후보에 바로 들어갑니다.</p>
+            </div>
+          </div>
+
+          <form id="menu-form" class="menu-form">
+            <div class="form-grid">
+              <label>
+                메뉴 이름
+                <input name="name" type="text" placeholder="예: 부대찌개" required />
+              </label>
+              <label>
+                카테고리
+                <input name="category" type="text" placeholder="예: 한식" required />
+              </label>
+              <label>
+                칼로리
+                <input name="calorie" type="number" min="0" step="10" placeholder="650" />
+              </label>
+              <label>
+                맵기
+                <input name="spicy_level" type="number" min="0" max="5" step="1" placeholder="0~5" />
+              </label>
+              <label>
+                등록자
+                <input name="author_name" type="text" placeholder="익명" />
+              </label>
+            </div>
+            <button class="secondary-button" type="submit">메뉴 등록</button>
+          </form>
+
+          <div id="menu-list" class="menu-list"></div>
+        </section>
+
+        <section id="detail-tab" class="tab-panel" aria-labelledby="detail-tab-button">
+          <div id="detail-view" class="detail-view empty-detail">
+            <h2>추천 기록을 선택해주세요</h2>
+            <p>추천 기록 카드의 상세 버튼을 누르면 메뉴 정보와 한 줄 평을 볼 수 있습니다.</p>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <script src="/app.js"></script>
+  </body>
+</html>
