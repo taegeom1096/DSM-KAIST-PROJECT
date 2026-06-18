@@ -1,5 +1,8 @@
 # 메뉴 추천 웹사이트 README
 
+## 서버 URL
+https://dsm-kaist-project-kimtaegeon-johyunwoo-jonjal.up.railway.app/
+
 ## 1. 팀명과 서비스 이름
 
 - 팀명: 메뉴 추천 팀
