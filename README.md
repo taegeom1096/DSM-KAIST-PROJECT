@@ -1,4 +1,4 @@
-# 메뉴 추천 웹사이트 README
+# 메뉴 추천 웹사이트
 
 ## 서버 URL
 https://dsm-kaist-project-kimtaegeon-johyunwoo-jonjal.up.railway.app/
